@@ -6,7 +6,7 @@ export default function LocationDisplay() {
 
   return (
     <>
-      <div data-testid="location-display">{location.pathname}</div>
+      <div data-test-id="location-display">{location.pathname}</div>
     </>
   );
 }
