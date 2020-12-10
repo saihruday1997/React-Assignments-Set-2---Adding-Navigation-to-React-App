@@ -1,8 +1,10 @@
 import React, { Component, useState } from "react";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import "../styles/App.css";
 import Home from "./home";
 import About from "./about";
+import Badpage from "./badpage";
+import LocationDisplay from "./locationDisplay";
 
 class App extends Component {
   render() {
@@ -12,8 +14,12 @@ class App extends Component {
           {/* Do not remove the main div */}
           <a href="/">Home</a>
           <a href="/about">About</a>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" exact component={About} />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/about" exact component={About} />
+            <Route component={Badpage} />
+          </Switch>
+          <LocationDisplay />
         </div>
       </>
     );
