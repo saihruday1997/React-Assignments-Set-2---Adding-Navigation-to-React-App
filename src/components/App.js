@@ -8,11 +8,13 @@ class App extends Component {
   render() {
     return (
       <>
-        <div id="main">{/* Do not remove the main div */}</div>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <Route path="/" exact component={Home} />
-        <Route path="/about" exact component={About} />
+        <div id="main">
+          {/* Do not remove the main div */}
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <Route path="/" exact component={Home} />
+          <Route path="/about" exact component={About} />
+        </div>
       </>
     );
   }
