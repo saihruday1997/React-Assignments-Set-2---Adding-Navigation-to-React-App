@@ -18,7 +18,7 @@ class App extends Component {
           <Route path="/about" exact component={About} />
           <Route component={Badpage} />
         </Switch>
-        <LocationDisplay />
+        <LocationDisplay data-test-id="location-display" />
       </>
     );
   }
