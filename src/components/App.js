@@ -7,13 +7,13 @@ import About from "./about";
 class App extends Component {
   render() {
     return (
-      <div id="main">
-        {/* Do not remove the main div */}
+      <>
+        <div id="main">{/* Do not remove the main div */}</div>
         <a href="/">Home</a>
         <a href="/about">About</a>
         <Route path="/" exact component={Home} />
-        <Route path="/about" componenet={About} />
-      </div>
+        <Route path="/about" exact component={About} />
+      </>
     );
   }
 }
