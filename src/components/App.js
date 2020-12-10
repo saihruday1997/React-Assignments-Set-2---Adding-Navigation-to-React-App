@@ -1,5 +1,5 @@
 import React, { Component, useState } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Link, Route, Switch } from "react-router-dom";
 import "../styles/App.css";
 import Home from "./home";
 import About from "./about";
@@ -11,8 +11,8 @@ class App extends Component {
     return (
       <>
         <div id="main">{/* Do not remove the main div */}</div>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" exact component={About} />
