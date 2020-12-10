@@ -25,4 +25,4 @@ class App extends Component {
 }
 
 export default App;
-export { LocationDisplay };
+export { LocationDisplay, Home, About, Badpage };
